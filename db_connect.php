@@ -1,13 +1,15 @@
 <?php
-$servername = "localhost";
-$username = "root"; // seu usuário
-$password = ""; // sua senha
-$dbname = "loja_virtual"; // nome do banco de dados
+// admin/db_connect.php
 
-// Criar conexão
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "loja_virtual";
+
+// Criar a conexão
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Verificar conexão
+// Verificar a conexão
 if ($conn->connect_error) {
     die("Conexão falhou: " . $conn->connect_error);
 }
